@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Loader,Card,FormField } from '../components';
 
-const RenderCards=(data,title)=>{
+const RenderCards=({data,title})=>{
     if(data?.length>0){
         return data.map((post)=>
             <card key={post._id} {...post}/>

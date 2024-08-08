@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {BrowserRouter,Link,Route,Routes} from 'react-router-dom';
-import { Home,createPost } from './pages';
+import { Home,CreatePost } from './pages';
 import './App.css';
 import {logo,download,preview} from './assets'
 
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
 
-          <Route path='/create-post' element={<createPost/>} />
+          <Route path='/create-post' element={<CreatePost/>} />
         </Routes>
       </main>
     </BrowserRouter>
